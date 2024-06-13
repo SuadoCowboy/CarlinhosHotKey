@@ -49,7 +49,7 @@ const std::vector<std::string> phrases = {
 	"O Carlinhos apostou no subway money",
 	"O Carlinhos ganhou 15 e 50 reais no subway money",
 	"Cleide, a Dalva ja apostou 500 200 reais no subway money. Venha voce tambem.",
-	"Entre no link para ganhar o bônus dos cavalos",
+	"Entre no link para ganhar o bonus dos cavalos",
 	
 	"a comida esta pronta a comida esta pronta jantar agora",
 	
@@ -189,10 +189,10 @@ LRESULT CALLBACK LowLevelKeyboardProc(int nCode, WPARAM wParam, LPARAM lParam) {
 			SetClipboardText(phrases[rand() % phrases.size()]);
 			
 			SimulateKeyPress(VK_CONTROL);
-			SimulateKeyPress('A');
+			//SimulateKeyPress('A');
 			SimulateKeyPress('V');
 			
-			SimulateKeyRelease('A');
+			//SimulateKeyRelease('A');
 			SimulateKeyRelease(VK_CONTROL);
 			SimulateKeyRelease('V');
 			pasting = true;
